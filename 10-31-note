@@ -1,0 +1,77 @@
+### 主存 Main Memory
+
+memory 相关的名词：
+
+- RAM (Random Access Memory)
+
+	- DRAM
+
+		D: dynamic 写数据后过很长时间不去写可能会丢失
+
+		Volatile: 表示易变
+
+		$\to$ EDO & FP $\to$ SDRAM $\to$ DDR
+
+		- SDRAM
+
+			S: sync 在 cpu 和 memory 之间拉了根线同步
+
+		- DDR
+
+			DD: double data 时钟下降沿也利用
+
+	- SRAM
+
+		S: static 只要不停电信息不会丢失
+
+		S-R 锁存器
+
+- ROM (Read Only Memory)
+
+	- PROM
+
+		P: programmingable 可编辑
+
+		e.g. 主板启动时的代码，不需要修改。用铁丝连接网，熔断不导电为 0，导电为 1。
+
+	- EPROM
+
+		E: erasable 可擦除
+
+		e.g. 用紫外线照后可恢复导电
+
+	- E$^2$PROM
+
+		Electrically Erasable 带电可擦除
+
+		通过高压擦除
+
+	- FLASH
+
+		闪速存储器
+
+		再改进
+
+		- NAND
+		- NOR
+
+
+
+### DRAM
+
+RAS: row address select
+
+CS: chip select
+
+cpu 访问 memory 仅在 cache miss 的情况下。
+
+所以长度固定。
+
+### Multi-Bank
+
+不需要加宽总线，把 memory 分成几个 bank。
+
+$AMAT_M = T_{addr} + T_{access} + T_{transfer}$
+
+Interleaved: 同时开始准备，但是出口一次只能出一个。
+
