@@ -4,11 +4,11 @@
 
 ## Virtual Cache VS Physical Cache
 
-1. Core + Cache (P) + VM
+1. Core + Cache (V) + VM
 
    synonym & alias problem: page table per process 
 
-2. Core + VM + Cache (V)
+2. Core + VM + Cache (P)
 
    performance problem: TLB (translation lookaside buffer)
 
