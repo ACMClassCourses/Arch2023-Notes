@@ -1,0 +1,18 @@
+About Memory Reorder Buffer
+
+[Problem]Addresses out-of-order processor issues for correct instruction execution.
+
+[Design]
+
+Stores in-flight memory operations temporarily.
+In-order Commit: Ensures committed results follow correct program order.
+
+[Dependencies]
+
+Tracks instruction dependencies to prevent premature commitments.
+
+[Applications]
+
+Enforces memory consistency models in parallel programming.
+Aids correct result commitment in speculative execution scenarios.
+Key component in out-of-order processors for efficient execution.
