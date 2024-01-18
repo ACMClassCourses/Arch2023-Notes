@@ -1,6 +1,6 @@
 # Computer Architecture Note W15D1
 
-(Recitation by A.Lei)
+(Recitation by Alei)
 
 ## Virtual Cache VS Physical Cache
 

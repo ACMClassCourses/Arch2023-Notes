@@ -1,6 +1,6 @@
 # Computer Architecture Note W11D1
 
-Q: Why we need memory reorder buffer?
+Q: Why do we need memory reorder buffer?
 
 A: For Process SYNC & IPC (Inter-Process Communication). (e.g. we may have memory barrier)
 
